@@ -16,7 +16,7 @@ const Navbar = () => {
       
         <div className=' w-full flex justify-between lg:hidden'>
             <Image src='./logo.png' alt='logo' width={70} height={10}/>
-            <div className=' flex justify-center' onClick={()=> setShowNav(!showNav)}>
+            <div className=' flex justify-center items-center' onClick={()=> setShowNav(!showNav)}>
             <Image src='./menu.svg' alt='logo' width={30} height={10}/>
 
             </div>
