@@ -18,7 +18,7 @@ const Sec1 = () => {
 
         <div className=' flex flex-col lg:flex-row  mb-10 lg:flex-wrap gap-y-20 lg:gap-x-5 justify-center items-center'>
             {SEC.map((item,index)=>(
-                <div key={index} className=' w-[285px] h-[323px] group rounded-[20px] shadow-xl  flex justify-center flex-col items-center shadow-[#0000008d] bg-[#82B9BD] lg:bg-white lg:shadow-md lg:hover:bg-[#82B9BD] lg:hover:shadow-[#0000008d] transition-all ease-in duration-200 '>
+                <div key={index} className=' w-[285px] h-[323px] group rounded-[20px] shadow-xl  flex justify-center flex-col items-center shadow-[#0000008d] bg-[#5a77ecce] lg:bg-white lg:shadow-md lg:hover:bg-[#5a77ecce] lg:hover:shadow-[#0000008d] transition-all ease-in duration-200 '>
                     <div className=' w-[228px] h-[176px] relative  bg-white  shadow-md -mt-[4rem] mb-10 rounded-lg  border-black'>
                         <Image src={item.pic} alt='pic' className='rounded-[10px] ' fill/>
                     </div>
