@@ -22,7 +22,7 @@ const Home = () => {
         </div>
 
         <div className=' flex justify-center'>
-            <div className=' absolute top-[10rem] lg:top-[25rem] shadow-xl w-[25rem] lg:w-[60rem] xl:w-[72rem] xl:h-[42rem] 2xl:w-[80rem] 2xl:h-[45rem] lg:h-[30rem] shadow-[#0000006f] rounded-[20px] h-[15rem] bg-white'>
+            <div className=' absolute top-[10rem] lg:top-[25rem] shadow-xl w-[24rem] lg:w-[60rem] xl:w-[72rem] xl:h-[42rem] 2xl:w-[80rem] 2xl:h-[45rem] lg:h-[30rem] shadow-[#0000006f] rounded-[20px] h-[15rem] bg-white'>
             <Image src='./register.jpg' alt='logo' className='rounded-[20px] ' fill/>
             </div>
         </div>
