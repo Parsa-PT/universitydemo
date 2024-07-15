@@ -32,7 +32,7 @@ const Register = () => {
                         <label>نام</label>
                     </div>
                     <div className="inputs">
-                        <input  type="text" required />
+                        <input  type="password" required />
                         <label>رمز</label>
                     </div>
                     
