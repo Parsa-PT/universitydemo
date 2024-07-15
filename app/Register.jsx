@@ -36,7 +36,7 @@ const Register = () => {
                     </div>
                     
                     <div className=' flex justify-center '>
-                    <div className="login-btn">
+                    <div className="login-btn  -mt-2  mb-1.5">
                         <button onClick={myf}   className=' text-xl' >ورود</button>
                     </div>
                     </div>
