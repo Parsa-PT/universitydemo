@@ -26,3 +26,26 @@ export const SEC = [
         name:'استاد نسرین نصر آبادی'
     },
 ]
+
+export const SEC3 = [
+    {
+        pic:'./vector2.svg',
+        title:'100+',
+        desc:'تعداد مدرس'
+    },
+    {
+        pic:'./vector1.png',
+        title:'3K',
+        desc:'تعداد دانشجو'
+    },
+    {
+        pic:'./vector3.svg',
+        title:'29',
+        desc:'تعداد رشته'
+    },
+    {
+        pic:'./vector4.svg',
+        title:'10+',
+        desc:'افتخارات'
+    },
+]
