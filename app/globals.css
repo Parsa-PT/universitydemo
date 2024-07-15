@@ -2,32 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.SEC2{
+  background-image: url('/SEC2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.container .inputs{
+  position: relative;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.container .inputs input{
+  width: 100%;
+  color: #000000;
+  padding: 10px 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background: white;
+  border-radius: 10px;
+  padding-right: 2px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container .inputs input:focus{
+  border-bottom: 2px solid #fff;
+}
+
+.container label{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: #070707;
+  pointer-events: none;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.login-btn{
+  position: relative;
+  width: 50%;
+  height: 50px;
+  background: #ffffff;
+  color: #0a0a0a;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: -22px;
+  border-radius: 10px;
+  text-align: center; 
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.login-btn:hover{
+  background: rgba(255, 255, 255, 0.75);
+  /* box-shadow: 0 0 5px #b92bce,0 0 10px #b92bce,0 0 40px #b92bce;  */
+}
+
+
+.inputs input:focus ~ label,
+.inputs textarea:focus ~ label,
+.inputs input:valid ~ label,
+.inputs textarea:valid ~ label{
+  top: -40px;
+  right: 0;
+  font-size: 14px;
+  color: #fff;
 }
