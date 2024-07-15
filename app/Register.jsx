@@ -7,7 +7,7 @@ import Cookies from 'js-cookie'
 const Register = () => {
 
   const my =()=>{
-    window.location.assign('/universitydemo')
+    window.location.assign('https://parsa-pt.github.io/universitydemo/')
   }
 
   return (
