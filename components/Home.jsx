@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section className=' relative '>
         <div className=' w-full relative h-[20rem] lg:h-screen'>
-         <Image src='/main2.jpg' alt='logo' fill/>
+         <Image src='./main2.jpg' alt='logo' fill/>
         </div>
         <div className=' absolute  top-16 lg:top-[14rem] left-[50%] translate-x-[-50%]'>
             <div className=' w-[25rem] h-[20rem] lg:w-[70rem] lg:h-[50rem] lg:border-[6px] flex justify-center items-center rounded-[200%] border-[3px] border-white'>
@@ -23,7 +23,7 @@ const Home = () => {
 
         <div className=' flex justify-center'>
             <div className=' absolute top-[10rem] lg:top-[25rem] shadow-xl w-[25rem] lg:w-[60rem] xl:w-[72rem] xl:h-[42rem] 2xl:w-[80rem] 2xl:h-[45rem] lg:h-[30rem] shadow-[#0000006f] rounded-[20px] h-[15rem] bg-white'>
-            <Image src='/register.jpg' alt='logo' className='rounded-[20px] ' fill/>
+            <Image src='./register.jpg' alt='logo' className='rounded-[20px] ' fill/>
             </div>
         </div>
     </section>
