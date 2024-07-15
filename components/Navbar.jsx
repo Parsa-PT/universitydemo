@@ -28,7 +28,7 @@ const Navbar = () => {
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>خانه</li>
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>درباره ما</li>
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>کاروزی</li>
-                <Link href='/universitydemo/home'>
+                <Link href='/home'>
                 <li  className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>حساب کاربری</li>
                 
                 </Link>
