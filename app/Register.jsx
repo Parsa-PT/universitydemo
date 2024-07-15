@@ -6,7 +6,8 @@ import Cookies from 'js-cookie'
 
 const Register = () => {
 
- const my =()=>{
+ const my =(e)=>{
+   e.preventDefault()
     window.location.assign('https://parsa-pt.github.io/universitydemo/')
   }
  
@@ -32,12 +33,12 @@ const Register = () => {
                     </div>
                     <div className="inputs">
                         <input  type="text" required />
-                        <label>ایمیل</label>
+                        <label>رمز</label>
                     </div>
                     
                     <div className=' flex justify-center '>
                     <div className="login-btn  -mt-2  mb-1.5">
-                        <button onClick={my}   className=' text-xl' >ورود</button>
+                        <button onClick={my} type='submit'   className=' text-xl' >ورود</button>
                     </div>
                     </div>
                     
