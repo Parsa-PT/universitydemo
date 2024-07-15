@@ -4,7 +4,7 @@
 
 
 .SEC2{
-  background-image: url('/SEC2.jpg');
+  background-image: url('../public/SEC2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
