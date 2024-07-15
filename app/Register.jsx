@@ -7,7 +7,7 @@ import Cookies from 'js-cookie'
 const Register = () => {
 
   const my =()=>{
-    window.location.assign('/')
+    window.location.assign('/universitydemo')
   }
 
   return (
