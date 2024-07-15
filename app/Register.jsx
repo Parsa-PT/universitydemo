@@ -6,6 +6,9 @@ import Cookies from 'js-cookie'
 
 const Register = () => {
 
+ const my =()=>{
+    window.location.assign('https://parsa-pt.github.io/universitydemo/')
+  }
  
   return (
     <div dir='rtl' className=' flex flex-col md:flex-row justify-center items-center min-h-[100vh]'>
@@ -34,7 +37,7 @@ const Register = () => {
                     
                     <div className=' flex justify-center '>
                     <div className="login-btn  -mt-2  mb-1.5">
-                        <button   className=' text-xl' >ورود</button>
+                        <button onClick={my}   className=' text-xl' >ورود</button>
                     </div>
                     </div>
                     
