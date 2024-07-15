@@ -6,7 +6,7 @@ const Sec3 = () => {
     <div className=' w-full flex-col lg:flex-row  mb-16 items-center gap-y-10 flex justify-around   '>
       <div className=' w-[370px] h-[373px]  hover:border-l-2  group hover:border-r-2 hover:border-b-2 hover:border-red-400  transition-all ease-in duration-150 hover:shadow-red-200 hover:rounded-xl bg-white drop-shadow-lg'>
             <div className=' mb-3 w-full h-[13rem] overflow-hidden relative group-hover:rounded-xl'>
-                <Image src='/learn.jpg' className=' group-hover:scale-125 transition-all ease-in duration-150 ' alt='pic' fill/>
+                <Image src='./learn.jpg' className=' group-hover:scale-125 transition-all ease-in duration-150 ' alt='pic' fill/>
             </div>
 
             <div className=' flex flex-col gap-y-5 items-center'>
@@ -23,7 +23,7 @@ const Sec3 = () => {
       </div>
       <div className=' w-[370px] h-[373px]  hover:border-l-2  group hover:border-r-2 hover:border-b-2 hover:border-red-400  transition-all ease-in duration-150 hover:shadow-red-200 hover:rounded-xl bg-white drop-shadow-lg'>
             <div className=' mb-3 w-full h-[13rem] overflow-hidden relative group-hover:rounded-xl'>
-                <Image src='/sec3.jpg' className=' group-hover:scale-125 transition-all ease-in duration-150 ' alt='pic' fill/>
+                <Image src='./sec3.jpg' className=' group-hover:scale-125 transition-all ease-in duration-150 ' alt='pic' fill/>
             </div>
 
             <div className=' flex flex-col gap-y-5 items-center'>
