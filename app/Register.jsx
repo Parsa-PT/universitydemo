@@ -6,21 +6,21 @@ import Cookies from 'js-cookie'
 
 const Register = () => {
 
-  const myf =()=>{
-    window.location.assign('/home')
+  const my =()=>{
+    window.location.assign('/')
   }
 
   return (
     <div dir='rtl' className=' flex flex-col md:flex-row justify-center items-center min-h-[100vh]'>
       <div className='  w-[22rem]  h-[42rem] md:h-[29rem]   flex flex-col-reverse  md:flex-row-reverse justify-between md:w-[47rem] lg:w-[57rem] xl:w-[70rem] xl:h-[35rem] bg-white shadow-lg'>
         <div className=' w-full h-[17rem] md:h-full relative'>
-        <Image src='/register2.jpg' alt='pic' fill/>
+        <Image src='./register2.jpg' alt='pic' fill/>
 
         </div>
             <div className=' w-full h-[65%]  md:w-[45%] md:h-full bg-[#15436b8c]'>
                 <div className=' w-full flex justify-center pt-7'>
 
-                <Image src='/logo.png' alt='logo' width={100} height={10}/>
+                <Image src='./logo.png' alt='logo' width={100} height={10}/>
 
                 </div>
 
@@ -37,7 +37,7 @@ const Register = () => {
                     
                     <div className=' flex justify-center '>
                     <div className="login-btn  -mt-2  mb-1.5">
-                        <button onClick={myf}   className=' text-xl' >ورود</button>
+                        <button onClick={my}   className=' text-xl' >ورود</button>
                     </div>
                     </div>
                     
