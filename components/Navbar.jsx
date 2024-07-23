@@ -8,8 +8,14 @@ import { AnimatePresence } from 'framer-motion'
 
 const Navbar = () => {
   const [showNav , setShowNav] = useState(false)
+  const [showUser , setTest] = useState('')
 
-  let showUser = JSON.parse(localStorage.getItem('user'))
+  
+
+  useEffect(() => {
+    let test = JSON.parse(localStorage.getItem('user'))
+    setTest(test)
+  },[])
 
   return (
     <div dir='rtl' className=' w-full flex py-2 px-10 h-[5rem] '>
