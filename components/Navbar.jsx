@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion'
 const Navbar = () => {
   const [showNav , setShowNav] = useState(false)
 
+  let showUser = JSON.parse(localStorage.getItem('user'))
 
   return (
     <div dir='rtl' className=' w-full flex py-2 px-10 h-[5rem] '>
@@ -28,10 +29,20 @@ const Navbar = () => {
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>خانه</li>
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>درباره ما</li>
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>کاروزی</li>
-                <Link href='/home'>
-                <li  className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>حساب کاربری</li>
+                 {showUser ?
+               
+                 <>
                 
-                </Link>
+                <li  className=' bg-blue-300 px-5 py-1 rounded-md text-white ransition-all ease-in duration-75'>{showUser}</li>
+                <div onClick={()=> {localStorage.removeItem('user');  location.reload()}}  className=' text-white  cursor-pointer rounded-lg px-2 py-1 bg-red-400'>
+                  خروج از حساب
+                </div>
+                  
+                </> : <>
+                 <Link href='/home'>
+                  <li  className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>حساب کاربری</li>
+                  </Link>
+                </>}
             </ul>
             <div className=' flex justify-center relative items-center'>
                <input type="text" placeholder='جستجو...'  className='w-[14rem] relative px-2 rounded-[1rem]  shadow-md h-[3rem]' />
@@ -52,10 +63,20 @@ const Navbar = () => {
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>خانه</li>
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>درباره ما</li>
                 <li className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>کاروزی</li>
-                <Link href='/home'>
-                <li  className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>حساب کاربری</li>
+                 {showUser ?
+               
+                 <>
                 
-                </Link>
+                <li  className=' bg-blue-300 px-5 py-1 rounded-md text-white ransition-all ease-in duration-75'>{showUser}</li>
+                <div onClick={()=> {localStorage.removeItem('user');  location.reload()}}  className=' text-white  cursor-pointer rounded-lg px-2 py-1 bg-red-400'>
+                  خروج از حساب
+                </div>
+                  
+                </> : <>
+                 <Link href='/home'>
+                  <li  className=' hover:border-b-2 hover:border-t-2 hover:border-[#82B9BD] transition-all ease-in duration-75'>حساب کاربری</li>
+                  </Link>
+                </>}
             </ul>
 
             
