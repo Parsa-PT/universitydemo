@@ -2,13 +2,17 @@
 import React from 'react'
 import Image from 'next/image'
 import Cookies from 'js-cookie'
+import { useState } from 'react'
 
 
 const Register = () => {
 
+ const [username , setUser] = useState('')
+
  const my =(e)=>{
    e.preventDefault()
     window.location.assign('https://parsa-pt.github.io/universitydemo/')
+  localStorage.setItem('user', JSON.stringify(username))
   }
  
   return (
@@ -28,7 +32,7 @@ const Register = () => {
                 <div className='container  px-5'>
                 <form  className=" flex flex-col gap-5 md:gap-8 mt-20 " action="">
                     <div className="inputs">
-                        <input  dir="rtl" type="text" required />
+                        <input value={username} onChange={(e)=>setUser(e.target.value)} dir="rtl" type="text" required />
                         <label>نام</label>
                     </div>
                     <div className="inputs">
@@ -37,8 +41,8 @@ const Register = () => {
                     </div>
                     
                     <div className=' flex justify-center '>
-                    <div className="login-btn  -mt-2  mb-1.5">
-                        <button onClick={my} type='submit'   className=' text-xl' >ورود</button>
+                    <div  onClick={my} className="login-btn  -mt-2  mb-1.5">
+                        <button type='submit'   className=' text-xl' >ورود</button>
                     </div>
                     </div>
                     
