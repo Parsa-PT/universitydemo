@@ -8,11 +8,16 @@ import { useState } from 'react'
 const Register = () => {
 
  const [username , setUser] = useState('')
+ const [pass , setPass] = useState('')
 
  const my =(e)=>{
    e.preventDefault()
-    window.location.assign('https://parsa-pt.github.io/universitydemo/')
+  if (username && pass !== ''){
+ window.location.assign('https://parsa-pt.github.io/universitydemo/')
   localStorage.setItem('user', JSON.stringify(username))
+   
+  }
+   
   }
  
   return (
@@ -36,7 +41,7 @@ const Register = () => {
                         <label>نام</label>
                     </div>
                     <div className="inputs">
-                        <input  type="password" required />
+                        <input value={pass} onChange={(e)=>setPass(e.target.value)}  type="password" required />
                         <label>رمز</label>
                     </div>
                     
