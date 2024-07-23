@@ -60,7 +60,7 @@ const Navbar = () => {
        
         <AnimatePresence>
           {showNav?(
-            <motion.div animate={{height:300 , opacity:1}} exit={{height:0 , opacity:0}} initial={{height:0}} transition={{duration:0.3}}  className=' absolute bg-white z-50 right-0 top-20 w-full '>
+            <motion.div animate={{height:330 , opacity:1}} exit={{height:0 , opacity:0}} initial={{height:0}} transition={{duration:0.3}}  className=' absolute bg-white z-50 right-0 top-20 w-full '>
               <div className=' flex justify-center  mb-5 relative items-center'>
                <input type="text" placeholder='جستجو...'  className='w-[14rem] relative px-2 rounded-[1rem]  shadow-md h-[3rem]' />
 
