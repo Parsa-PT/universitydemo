@@ -16,7 +16,10 @@ const Register = () => {
  window.location.assign('https://parsa-pt.github.io/universitydemo/')
   localStorage.setItem('user', JSON.stringify(username))
    
-  }
+  }else{
+       window.alert('Try again')
+       navigator.vibrate([200,100,200])
+    }
    
   }
  
