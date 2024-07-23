@@ -18,7 +18,7 @@ const Register = () => {
    
   }else{
        window.alert('Try again')
-       navigator.vibrate([200,100,200])
+       
     }
    
   }
